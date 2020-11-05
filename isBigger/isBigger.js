@@ -2,6 +2,16 @@
 Given two numbers, a, b, as inputs, return true if a > b,
 return false if a < b, return 0 otherwise.
 
+function that takes in 2 parameters and returns "true "false or 0
+conditional statement that asks is a bigger than b"
+
+console.log
+call the function
+
+
+
+
+
 Bonus 1: If a or b is undefined or not a number, then return -1.
 Hint: Chekout typeof() operator at
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
@@ -37,9 +47,15 @@ console.log(result) // -1
 
 **/
 
-
-
 function isBigger(a, b) {
-	//Your code here
-	
+  let r = "-1";
+  if (a < b) {
+    console.log("true");
+  } else if (a > b) {
+    console.log("false");
+  } else {
+    console.log(r);
+  }
 }
+
+isBigger(4, 6);
