@@ -8,6 +8,8 @@ conditional statement that asks is a bigger than b"
 console.log
 call the function
 
+BONUS: if
+
 
 
 
@@ -53,6 +55,8 @@ function isBigger(a, b) {
     console.log("true");
   } else if (a > b) {
     console.log("false");
+  } else if (a === b) {
+    console.log(0);
   } else {
     console.log(r);
   }
