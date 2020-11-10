@@ -18,8 +18,19 @@
 // findLongestWord("What is the average airspeed velocity of an unladen swallow") should return 8.
 // findLongestWord("What if we try a super-long word such as otorhinolaryngology") should return 19.
 
-
 function findLongestWord(str) {
-  //your code here
+  var strsplit = str.split(" ");
+  var longestWord = 0;
+  for (var i = 0; i < strsplit.length; i++) {
+    if (strsplit[i].length > longestWord) {
+      longestWord = strsplit[i].length;
+    }
+  }
+  return longestWord;
 }
 
+var answer = findLongestWord(
+  "What does supercalifragilistic really mean anyways?"
+);
+
+console.log(answer);
